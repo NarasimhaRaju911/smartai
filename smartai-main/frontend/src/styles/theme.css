@@ -1,0 +1,117 @@
+
+:root {
+  --bg: #ffffff;
+  --bg-sidebar: #f7f7f8;
+  --bg-elevated: #ffffff;
+  --bg-hover: #ececf0;
+  --bg-active: #e4e6ee;
+  --bg-assistant: #f3f4f6;
+  --bg-user: #2563eb;
+  --text-on-user: #ffffff;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --danger-bg: #fef2f2;
+  --danger-text: #b91c1c;
+  --danger-border: #fecaca;
+  --code-bg: #f1f3f5;
+  --code-text: #1f2937;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+[data-theme="dark"] {
+  --bg: #111318;
+  --bg-sidebar: #171a21;
+  --bg-elevated: #1c2028;
+  --bg-hover: #292f3b;
+  --bg-active: #30394a;
+  --bg-assistant: #222832;
+  --bg-user: #3b6fe0;
+  --text-on-user: #ffffff;
+  --text: #f1f5f9;
+  --text-muted: #aab4c3;
+  --border: #343c49;
+  --accent: #4f83ee;
+  --accent-hover: #6b97f2;
+  --danger-bg: #351b20;
+  --danger-text: #fca5a5;
+  --danger-border: #71313b;
+  --code-bg: #151a22;
+  --code-text: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  color: var(--text);
+  background: var(--bg);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+input {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+
+/* ---------- Code and Markdown colors (Phase 7) ---------- */
+:root {
+  --bg-code-inline: #e5e7eb;
+  --bg-code: #111827;
+  --text-code: #e5e7eb;
+  --code-border: #1f2937;
+}
+[data-theme="dark"] {
+  --bg-code-inline: #2b3140;
+  --bg-code: #0b0e14;
+  --text-code: #e5e7eb;
+  --code-border: #2a303b;
+}
